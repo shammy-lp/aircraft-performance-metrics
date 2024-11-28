@@ -24,12 +24,45 @@ The primary goal of this analysis is to uncover key insights from aviation accid
 - **Marketability:** Evaluating how safety records and performance metrics influence the attractiveness of aircraft in the market, which could impact the number of flights people take per country and operational costs.
 
 ### Key Steps in the Analysis:
-1. **Data Preprocessing:**
-   - The dataset was cleaned by handling missing values, removing irrelevant columns, and ensuring consistency in the data.
-   - New features were engineered to improve the dataset's analytical potential, including the creation of variables like damage severity and accident phase.
+### **1. Data Structure Overview:**
+- **Objective:** Understand the dataset’s variables, dimensions, and overall structure.
+- **Action:** 
+  - I first examined the dataset to check the number of rows and columns.
+  -  I Identified the types of variables (e.g., categorical, continuous) and their data types.
 
-2. **Exploratory Data Analysis (EDA):**
-   - Visualizations and statistical summaries were used to identify trends and correlations in the dataset, including how flight phase, aircraft make,weather condition and injury severity relate to accident outcomes.
+### **2. Data Cleaning:**
+- **Objective:** Prepare the dataset for analysis by addressing data quality issues  and missing data.
+- **Action:** 
+  - Handled **missing values** through imputation by adding mean to numerical columns and mode for categorical columns.
+  - **Removed irrelevant columns** that didn’t contribute to the analysis objectives.
+
+### **3. Descriptive Statistics:**
+- **Objective:** Summarize the main characteristics of the dataset.
+- **Action:**
+  - Calculated **summary statistics** (mean, median, mode, standard deviation, min, and max) for continuous variables.
+  - Calculated **count statistics** for the categorical values.
+  - Calculated  the range between the maximum and mminmum for categorical columns
+    
+### **4. Feature Engineering:**
+- **Objective:** Enhance the dataset by creating new variables and refining existing ones for better insights.
+- **Action:**
+  - Created new variables based on existing ones, such as aggregating the total number of injuries and grouping them by has hghest injury count
+  - Removed any variables that were redundant or not useful for the analysis objectives.
+
+### **5. Exploratory Data Analysis (EDA):**
+- **Objective:** Visually and statistically analyze the data to uncover trends, patterns, and insights.
+- **Action:** 
+  - **Univariate Analysis:** 
+    - I began by exploring individual variables using  **visualizations** like **histograms** for continuous variables and **bar charts** for categorical variables.
+  - **Bivariate Analysis:** 
+    - I examined the relationships between two variables, using **scatter plots** for continuous variables and **box plots** for comparing continuous variables across categories. 
+    - I also calculated **correlations** between key continuous variables (e.g., `total_injuries` and `accident_cost`) to identify linear relationships.
+  - **Multivariate Analysis:** 
+    - I extended the analysis to multiple variables simultaneously, using **pair plots** to visualize the relationships between several continuous variables.
+    - **Heatmaps** were used to display the correlation matrix between multiple variables to detect clusters of related features.
+    - I also grouped the data by categorical variables (e.g., `aircraft_make`, `flight_phase`) to compare how key metrics like `total_injuries` and `accident_cost` varied across these categories.
+
+ 
 
 
 
