@@ -125,7 +125,7 @@ Investing in the aviation market requires careful analysis of safety, operationa
 - **Diversified Revenue Streams**: Choose companies with auxiliary income sources, such as cargo services or airport operations.  
 - **Fuel Efficiency and Cost Control**: Invest in operators adopting fuel-efficient aircraft to reduce operational costs and enhance profitability.
   
-###### **Presentation Slides**  
+### **Presentation Slides**  
 I prepared the presentation slides to summarize the key findings and actionable recommendations from my analysis. The slides focus on critical areas like safety trends, operational efficiency, financial impacts, and market opportunities in the aviation industry. My goal was to present the insights clearly and effectively, helping stakeholders and investors make informed decisions.  
 
 You can [download the slides here](https://docs.google.com/presentation/d/1_eMjCrdv9tkqLlbZi19rokKi1rBcM_JYlYhQNTwqDrU/edit#slide=id.g31a3ebca824_0_1135).
