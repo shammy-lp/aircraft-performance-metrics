@@ -5,7 +5,7 @@ This project focuses on analyzing aviation accident data to develop insights and
 - [Data](#data)
 - [Analysis Overview](#analysis-overview)
 - [Results](#results)
-- [Contributing](#contributing)
+- [Recommendations](#recommendations)
 - [License](#license)
 
 ### Data
@@ -62,7 +62,63 @@ The primary goal of this analysis is to uncover key insights from aviation accid
     - **Heatmaps** were used to display the correlation matrix between multiple variables to detect clusters of related features.
     - I also grouped the data by categorical variables (e.g., `aircraft_make`, `flight_phase`) to compare how key metrics like `total_injuries` and `accident_cost` varied across these categories.
 
+### Results
+### **1. Safety Analysis**
+#### **Weather Condition vs. Severity of Injury**
+I Examined how adverse weather conditions like VMC highly influenced the severity of injuries in incidents.  
+  **Key Insights**:
+  - Severe weather incidents like VMC result in a higher percentage of fatal and serious injuries compared to incidents in IMC then UMC because it had the least number of injuries.
  
+#### **Number of Injuries vs. Number of engines**
+ I Explored whether incidents involving a high number of injuries have a stronger correlation with the number of engines that the aircraft had.  
+  **Key Insights**:
+  - Aircraft with less number of engines have a disproportionately higher share of total injuries.
+  - Correlation coefficient between number of injuries and the number of engines of the aircraft is weak positive correlation (/r/=).
+
+### **2. Operational Analysis**
+#### **Total Injuries vs. Amateur-Built vs. Number of Engines**
+I investigated if amateur-built aircraft and the number of engines correlates with higher injury rates.  
+  **Key Insights**:
+  - The aircraft with faulty amatuer during building are associated with more injuries than professionally built ones due to construction quality variances.
+  - Single-engine aircraft incidents result in more injuries per accident compared to multi-engine aircraft, especially in amateur-built cases.
+  - Findings could indicate the number of engines significantly reduces injury risk (\(p < 0.05\)).
+
+### **3. Financial Analysis**
+#### **Aircraft Make, Damage Level, and Total Injuries**
+- I assessed how specific aircraft make and damage levels correlate with financial losses and injury rates.  
+  **Key Insights**:
+  -  The Aircraft Make with destroyed and substantial damage, correlates with the highest injury rates.  
+  - Severe damage leads to greater financial losses due to higher repair/replacement costs and legal liabilities.
+
+### **4. Marketability Analysis**
+#### **Aircraft Category, Purpose of Flight, and Country**
+- **Objective**: Analyze the market demand and performance across different countries and the purposesof the flight.  
+  **Key Insights**:
+  - General aviation has higher accident rates and correlates with personal and commercial use in the countries.  
+  - Commercial aircraft in the USA showed the highest injury count, a higher accident rate and higher marketability due to safety perception.
+ - Recreational flights have more amateur-built aircraft, reducing perceived reliability.
+
+### Recommendations
+Investing in the aviation market requires careful analysis of safety, operational efficiency, financial performance, and market trends. Below are recommendations for potential investors based on insights derived from aviation data analysis:
+
+### **1. Safety Recommendations**  
+- **Invest in Advanced Weather Predicting Systems**:Support operators or manufacturers that incorporate advanced weather forecasting tools and onboard safety technologies.  
+- **Focus on Modern Fleets**: Prioritize companies operating newer aircraft models with improved safety features.  
+
+### **2. Operational Efficiency Recommendations**  
+- **Professional Fleet Investment**: Avoid companies relying heavily on amateur-built aircraft to minimize operational risks.  
+- **Multi-Engine Aircraft Preference**: Invest in operators focusing on multi-engine aircraft for greater safety and operational reliability.  
+- **Efficiency in Ground Operations**: Support companies reducing turnaround times and optimizing resource allocation for stable operations.  
+
+### **3. Marketability Recommendations**  
+- **Commercial Over General Aviation**: Focus on commercial operators in regulated markets to capitalize on perceived safety and reliability.  
+- **Market-Specific Investments**: Support airlines expanding into high-demand regions like Asia-Pacific for better growth prospects.  
+- **Premium Offerings and Niche Markets**: Invest in companies providing premium services or catering to specialized markets like private charters.  
+
+### **4. Financial Performance Recommendations**  
+- **Focus on Reliable Manufacturers**: Avoid investing in operators using older or damage-prone aircraft models.  
+- **Diversified Revenue Streams**: Choose companies with auxiliary income sources, such as cargo services or airport operations.  
+- **Fuel Efficiency and Cost Control**: Invest in operators adopting fuel-efficient aircraft to reduce operational costs and enhance profitability.  
 
 
 
