@@ -10,7 +10,7 @@ This project focuses on analyzing aviation accident data to develop insights and
 - [License](#license)
 
 ### Data
-The Aviation dataset in this analysis includes aviation accident data that provides information about aircraft make and model, total number of injuries, weather conditions, and accident circumstances. Key columns in the dataset include:
+The Aviation dataset in this analysis includes aviation accident data that provides information about aircraft make and model, total number of injuries, weather conditions and accident circumstances. Key columns in the dataset include:
 - **Aircraft Make:** The manufacturer and model of the aircraft.
 - **Injury Severity:** The severity of injuries caused by the accident (e.g., fatal, serious, or minor).
 - **Accident Location:** The country and city where the accident occurred.
@@ -26,21 +26,21 @@ The primary goal of this analysis is to uncover key insights from aviation accid
 
 ### Key Steps in the Analysis:
 ### **1. Data Structure Overview:**
-- **Objective:** Understand the dataset’s variables, dimensions, and overall structure.
+- **Objective:**To understand the dataset’s variables, dimensions, and overall structure.
 - **Action:** 
   - I first examined the dataset to check the number of rows and columns.
-  -  I Identified the types of variables (e.g., categorical, continuous) and their data types.
+  -  I Identified the types of variables both categorical  and continuous and their data types.
 
 ### **2. Data Cleaning:**
-- **Objective:** Prepare the dataset for analysis by addressing data quality issues  and missing data.
+- **Objective:preparing the dataset for analysis by addressing data quality issues and missing data.
 - **Action:** 
   - Handled **missing values** through imputation by adding mean to numerical columns and mode for categorical columns.
   - **Removed irrelevant columns** that didn’t contribute to the analysis objectives.
 
 ### **3. Descriptive Statistics:**
-- **Objective:** Summarize the main characteristics of the dataset.
+- **Objective:** Summarizing the main characteristics of the dataset.
 - **Action:**
-  - Calculated **summary statistics** (mean, median, mode, standard deviation, min, and max) for continuous variables.
+  - Calculated **summary statistics** mean, median, mode, standard deviation, min, and max for continuous variables.
   - Calculated **count statistics** for the categorical values.
   - Calculated  the range between the maximum and mminmum for categorical columns
     
@@ -57,24 +57,24 @@ The primary goal of this analysis is to uncover key insights from aviation accid
     - I began by exploring individual variables using  **visualizations** like **histograms** for continuous variables and **bar charts** for categorical variables.
   - **Bivariate Analysis:** 
     - I examined the relationships between two variables, using **scatter plots** for continuous variables and **box plots** for comparing continuous variables across categories. 
-    - I also calculated **correlations** between key continuous variables (e.g., `total_injuries` and `accident_cost`) to identify linear relationships.
+    - I also calculated **correlations** between key continuous variables like `total_injuries` and `accident_cost` to identify linear relationships.
   - **Multivariate Analysis:** 
-    - I extended the analysis to multiple variables simultaneously, using **pair plots** to visualize the relationships between several continuous variables.
+    - I extended the analysis to multiple variables simultaneously using **pair plots** to visualize the relationships between several continuous variables.
     - **Heatmaps** were used to display the correlation matrix between multiple variables to detect clusters of related features.
-    - I also grouped the data by categorical variables (e.g., `aircraft_make`, `flight_phase`) to compare how key metrics like `total_injuries` and `accident_cost` varied across these categories.
+    - I also grouped the data by categorical variables like `aircraft_make`, `flight_phase` to compare how key metrics like `total_injuries` and `accident_cost` varied across these categories.
       
 ### Visualizations
-The visualizations are available here, and they were created using Tableau. You can explore them through this link: [Insert Link].
+I started by cleaning the data to ensure it was structured and ready for analysis. Afterward, I imported the cleaned data into Tableau, where I created interactive visualizations to explore key insights. These visualizations highlight important trends and relationships, such as safety metrics, financial impacts, and market opportunities within the aviation industry.The visualizations are available here. You can explore them through this link: [https://public.tableau.com/app/profile/linet.patriciah/viz/aircraftmetricsworkbook/AIRCRAFTSAFETYMETRICS#1].
 
 ### Results
 ### **1. Safety Analysis**
 #### **Weather Condition vs. Severity of Injury**
-I Examined how adverse weather conditions like VMC highly influenced the severity of injuries in incidents.  
+I examined how adverse weather conditions like VMC highly influenced the severity of injuries in incidents.  
   **Key Insights**:
   - Severe weather incidents like VMC result in a higher percentage of fatal and serious injuries compared to incidents in IMC then UMC because it had the least number of injuries.
  
 #### **Number of Injuries vs. Number of engines**
- I Explored whether incidents involving a high number of injuries have a stronger correlation with the number of engines that the aircraft had.  
+ I explored whether incidents involving a high number of injuries have a stronger correlation with the number of engines that the aircraft had.  
   **Key Insights**:
   - Aircraft with less number of engines have a disproportionately higher share of total injuries.
   - Correlation coefficient between number of injuries and the number of engines of the aircraft is weak positive correlation (/r/=).
@@ -85,18 +85,19 @@ I investigated if amateur-built aircraft and the number of engines correlates wi
   **Key Insights**:
   - The aircraft with faulty amatuer during building are associated with more injuries than professionally built ones due to construction quality variances.
   - Single-engine aircraft incidents result in more injuries per accident compared to multi-engine aircraft, especially in amateur-built cases.
-  - Findings could indicate the number of engines significantly reduces injury risk (\(p < 0.05\)).
+  - Findings could indicate the number of engines significantly reduces injury risk.
 
 ### **3. Financial Analysis**
 #### **Aircraft Make, Damage Level, and Total Injuries**
 - I assessed how specific aircraft make and damage levels correlate with financial losses and injury rates.  
   **Key Insights**:
-  -  The Aircraft Make with destroyed and substantial damage, correlates with the highest injury rates.  
-  - Severe damage leads to greater financial losses due to higher repair/replacement costs and legal liabilities.
+  -  The Aircraft Make like Boeing and Piper,Cessna commercial flights had destroyed and substantial damage, correlating with the highest injury rates.  
+  - Severe damage leads to greater financial losses due to higher repairand replacement costs and legal liabilities.
+  
 
 ### **4. Marketability Analysis**
 #### **Aircraft Category, Purpose of Flight, and Country**
-- **Objective**: Analyze the market demand and performance across different countries and the purposesof the flight.  
+- **Objective**: To analyze the market demand and performance across different countries and the purposesof the flight.  
   **Key Insights**:
   - General aviation has higher accident rates and correlates with personal and commercial use in the countries.  
   - Commercial aircraft in the USA showed the highest injury count, a higher accident rate and higher marketability due to safety perception.
