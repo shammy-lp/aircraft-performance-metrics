@@ -4,6 +4,7 @@ This project focuses on analyzing aviation accident data to develop insights and
 ### Table of Contents
 - [Data](#data)
 - [Analysis Overview](#analysis-overview)
+- [Visulizations](#visualizations)
 - [Results](#results)
 - [Recommendations](#recommendations)
 - [License](#license)
@@ -61,6 +62,9 @@ The primary goal of this analysis is to uncover key insights from aviation accid
     - I extended the analysis to multiple variables simultaneously, using **pair plots** to visualize the relationships between several continuous variables.
     - **Heatmaps** were used to display the correlation matrix between multiple variables to detect clusters of related features.
     - I also grouped the data by categorical variables (e.g., `aircraft_make`, `flight_phase`) to compare how key metrics like `total_injuries` and `accident_cost` varied across these categories.
+      
+### Visualizations
+The visualizations are available here, and they were created using Tableau. You can explore them through this link: [Insert Link].
 
 ### Results
 ### **1. Safety Analysis**
